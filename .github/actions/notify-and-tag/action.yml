@@ -242,4 +242,5 @@ runs:
         echo "| 📢 Notificación | ${{ steps.notify.outputs.sent }} |"
         echo ""
         echo "> Release notes disponibles en los **Artifacts** de este run."
+        echo "| Commit | \`${{ github.sha }}\` |" >> $GITHUB_STEP_SUMMARY
       } >> "$GITHUB_STEP_SUMMARY"
